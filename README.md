@@ -52,14 +52,15 @@ test/                      testes das regras de negócio e do fluxo de login
 Pré-requisito: [Flutter](https://docs.flutter.dev/get-started/install) com Dart 3.9 ou superior (conforme `pubspec.yaml`).
 
 ```bash
-cd locadora_app
-flutter create . --platforms=android,web   # gera as pastas de plataforma (só na primeira vez)
+git clone https://github.com/salatielmateus38-cmd/locadora-app-flutter.git
+cd locadora-app-flutter
+flutter create . --platforms=android,web   # completa os arquivos de plataforma gerados pelo Flutter
 flutter pub get
 flutter run
 flutter test
 ```
 
-> **Windows:** o caminho desta pasta tem acentos (`UNIPÊ`, `PROGRAMAÇÃO`) e o Gradle do Android recusa
-> caminhos com caracteres não ASCII. Depois do `flutter create`, adicione `android.overridePathCheck=true`
-> em `android/gradle.properties` ou copie o projeto para um caminho simples (ex.: `C:\dev\locadora_app`).
+> **Windows:** se o projeto estiver em um caminho com acentos, o Gradle do Android pode recusar
+> caracteres não ASCII. Adicione `android.overridePathCheck=true`
+> em `android/gradle.properties` ou copie o projeto para um caminho simples (ex.: `C:\dev\locadora-app-flutter`).
 > No navegador (`flutter run -d chrome`) isso não acontece.
